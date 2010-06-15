@@ -1,9 +1,13 @@
 package net.sourcewalker.m0w;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Game {
 
     private CardStack drawStack = new CardStack();
     private CardStack playingStack = new CardStack();
+    private List<Player> players = new ArrayList<Player>();
 
     public Game() {
         initDeck();
@@ -22,7 +26,7 @@ public class Game {
     }
 
     public int getPlayerCount() {
-        return 0;
+        return players.size();
     }
 
     public CardStack getDrawStack() {
@@ -35,6 +39,10 @@ public class Game {
 
     public GameState getState() {
         return GameState.Ended;
+    }
+
+    public List<Player> getPlayers() {
+        return players;
     }
 
 }
