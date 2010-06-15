@@ -1,4 +1,4 @@
-package net.sourcewalker.duo;
+package net.sourcewalker.m0w;
 
 /**
  * This enumeration contains the different "colors" of playing cards. The

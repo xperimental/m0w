@@ -1,4 +1,4 @@
-package net.sourcewalker.duo;
+package net.sourcewalker.m0w;
 
 import static org.junit.Assert.assertEquals;
 
