@@ -8,6 +8,8 @@ public class Game {
     private CardStack drawStack = new CardStack();
     private CardStack playingStack = new CardStack();
     private List<Player> players = new ArrayList<Player>();
+    private int activePlayer = 0;
+    private GameState state = GameState.Ended;
 
     public Game() {
         initDeck();
@@ -38,11 +40,19 @@ public class Game {
     }
 
     public GameState getState() {
-        return GameState.Ended;
+        return state;
     }
 
     public List<Player> getPlayers() {
         return players;
+    }
+
+    public Player getActivePlayer() {
+        return players.get(activePlayer);
+    }
+
+    protected void setState(GameState newState) {
+        state = newState;
     }
 
 }
