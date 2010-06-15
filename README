@@ -1,9 +1,9 @@
-READEME for m0w
+README for m0w
 ---------------
 
 Currently m0w is a project for myself to test drive my own test driven development
-skills. I thought making an implementation of a popular card game was a good idea
-for a project.
+skills. I thought making an implementation of a popular card game (Mau Mau) was
+a good idea for a project.
 
 Although this project is started as a playground for TDD the aim is that the
 game is playable someday.
