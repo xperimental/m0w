@@ -36,7 +36,7 @@ public class AStartedGameController {
     }
 
     @Test(expected = IllegalStateException.class)
-    public void canNotHoldMoreṔlayers() {
+    public void canNotHoldMorePlayers() {
         controller.addPlayer(new Player());
     }
 
